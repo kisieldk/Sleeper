@@ -1,0 +1,20 @@
+﻿<Window x:Class="Snipp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Snipp"
+		xmlns:f="clr-namespace:Snipp.ViewModel"
+        mc:Ignorable="d"
+        Title="SnippApp" MinHeight="100" MinWidth="100" MaxWidth="400" MaxHeight="200" WindowStyle="None" AllowsTransparency="True" ShowInTaskbar="True" ResizeMode="NoResize" WindowState="Normal" Height="150" d:DesignWidth="400">
+	<Grid Background="#373f49" Margin="0,0,0,-2">
+		<Button x:Name="btnSave" Height="30" Content="Ustaw" Foreground="White" Background="DarkGray" BorderBrush="#ff7f00"  Margin="224,112,38,10" Click="btnSave_Click"   />
+		<Button x:Name="btnExit" Height="30" Content="Zamknij" Foreground="White" Background="DarkGray" BorderBrush="#ff7f00" Margin="54,112,208,10" Click="btnExit_Click"   />
+		<Label x:Name="label" Content="Minuty do zamknięcia:" Foreground="#ff7f00" FontSize="20" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top"/>
+		<Slider x:Name="slider" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Width="380" Minimum="0" Maximum="190" TickFrequency="5" IsSnapToTickEnabled="True"/>
+		<Label x:Name="label1" Content="{Binding ElementName=slider, Path=Value, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="218,35,0,0" VerticalAlignment="Top" Foreground="#ff7f00" FontSize="20" />
+		<Button x:Name="btnStopProcess" Height="30" Content="Stop" Foreground="White" Background="DarkGray" BorderBrush="#ff7f00"  Margin="308,7,38,115" Click="btnStopProcess_Click"   />
+		<Label x:Name="label_Copy" Content="Pozostało: " Foreground="#ff7f00" FontSize="20" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"/>
+		<Label x:Name="label_Copy1" Content="{Binding TimeToCloseSystem}" Foreground="#ff7f00" FontSize="20" HorizontalAlignment="Left" Margin="112,0,0,0" VerticalAlignment="Top" Width="42"/>
+	</Grid>
+</Window>
