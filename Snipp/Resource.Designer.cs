@@ -63,6 +63,26 @@ namespace Snipp {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
         /// </summary>
+        public static System.Drawing.Icon cloud {
+            get {
+                object obj = ResourceManager.GetObject("cloud", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
+        public static System.Drawing.Icon cloudStart {
+            get {
+                object obj = ResourceManager.GetObject("cloudStart", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Icon similar to (Icon).
+        /// </summary>
         public static System.Drawing.Icon Icon1 {
             get {
                 object obj = ResourceManager.GetObject("Icon1", resourceCulture);
@@ -71,7 +91,7 @@ namespace Snipp {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Twoje snippety.
+        ///   Looks up a localized string similar to Ustaw czas do wyłączenia komputera.
         /// </summary>
         public static string NotyfiIconText {
             get {

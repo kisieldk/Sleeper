@@ -25,7 +25,7 @@ namespace Snipp
 
                 _notifyIcon = new System.Windows.Forms.NotifyIcon();
                 _notifyIcon.DoubleClick += (s, args) => ShowMainWindow();
-                _notifyIcon.Icon = Resource.Icon1;
+                _notifyIcon.Icon = Resource.cloudStart;
                 _notifyIcon.Visible = true;
 
                 CreateContextMenu();

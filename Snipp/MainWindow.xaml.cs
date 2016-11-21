@@ -64,10 +64,10 @@ namespace Snipp
 				await Task.Delay(delay,token);
 				{
 					_mainWindowViewModel.TimeToLeftCounter.Stop();
-					Process.Start("shutdown", "/f /s /t 0");
+					//Process.Start("shutdown", "/f /s /t 0");
 
 					//For test
-					//MessageBox.Show("Test", "Test",MessageBoxButton.OK);
+					MessageBox.Show("Test", "Test",MessageBoxButton.OK);
 
 				}
 			}

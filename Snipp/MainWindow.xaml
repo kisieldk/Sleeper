@@ -6,14 +6,14 @@
         xmlns:local="clr-namespace:Snipp"
 		xmlns:f="clr-namespace:Snipp.ViewModel"
         mc:Ignorable="d"
-        Title="SnippApp" MinHeight="100" MinWidth="100" MaxWidth="400" MaxHeight="200" WindowStyle="None" AllowsTransparency="True" ShowInTaskbar="True" ResizeMode="NoResize" WindowState="Normal" Height="150" d:DesignWidth="400">
+        Title="SnippApp" MinHeight="100" MinWidth="100" MaxWidth="400" MaxHeight="200" WindowStyle="None" AllowsTransparency="True" ShowInTaskbar="True" ResizeMode="NoResize" WindowState="Normal" Height="150" d:DesignWidth="400" WindowStartupLocation="CenterScreen" AllowDrop="True">
 	<Grid Background="#373f49" Margin="0,0,0,-2">
-		<Button x:Name="btnSave" Height="30" Content="Ustaw" Foreground="White" Background="DarkGray" BorderBrush="#ff7f00"  Margin="224,112,38,10" Click="btnSave_Click"   />
-		<Button x:Name="btnExit" Height="30" Content="Zamknij" Foreground="White" Background="DarkGray" BorderBrush="#ff7f00" Margin="54,112,208,10" Click="btnExit_Click"   />
+		<Button x:Name="btnSave" Height="30" Content="Ustaw" Foreground="White" Background="DarkGray" BorderBrush="#ff7f00"  Margin="224,112,40,10" Click="btnSave_Click"   />
+		<Button x:Name="btnExit" Content="Zamknij" Foreground="White" Background="DarkGray" BorderBrush="#ff7f00" Margin="331,8,10,117" Click="btnExit_Click"   />
 		<Label x:Name="label" Content="Minuty do zamknięcia:" Foreground="#ff7f00" FontSize="20" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top"/>
 		<Slider x:Name="slider" HorizontalAlignment="Left" Margin="10,77,0,0" VerticalAlignment="Top" Width="380" Minimum="0" Maximum="190" TickFrequency="5" IsSnapToTickEnabled="True"/>
 		<Label x:Name="label1" Content="{Binding ElementName=slider, Path=Value, UpdateSourceTrigger=PropertyChanged}" HorizontalAlignment="Left" Margin="218,35,0,0" VerticalAlignment="Top" Foreground="#ff7f00" FontSize="20" />
-		<Button x:Name="btnStopProcess" Height="30" Content="Stop" Foreground="White" Background="DarkGray" BorderBrush="#ff7f00"  Margin="308,7,38,115" Click="btnStopProcess_Click"   />
+		<Button x:Name="btnStopProcess" Height="30" Content="Stop" Foreground="White" Background="DarkGray" BorderBrush="#ff7f00"  Margin="28,112,236,10" Click="btnStopProcess_Click"   />
 		<Label x:Name="label_Copy" Content="Pozostało: " Foreground="#ff7f00" FontSize="20" HorizontalAlignment="Left" Margin="10,0,0,0" VerticalAlignment="Top"/>
 		<Label x:Name="label_Copy1" Content="{Binding TimeToCloseSystem}" Foreground="#ff7f00" FontSize="20" HorizontalAlignment="Left" Margin="112,0,0,0" VerticalAlignment="Top" Width="42"/>
 	</Grid>
